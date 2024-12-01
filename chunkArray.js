@@ -1,4 +1,4 @@
-// chunkArray([1,2,3,4,5,6,7], 2)  Output: [[1,2], [3,4], [5,6]]
+// chunkArray([1,2,3,4,5,6,7], 2)  Output: [[1,2], [3,4], [5,6], [7]]
 
 const chunkArray = (arr, num) => {
   const newArr = [];
@@ -7,7 +7,6 @@ const chunkArray = (arr, num) => {
     newArr.push(arr.slice(index, index + num))
     index += num;
   }
-
 
   return newArr;
 }
